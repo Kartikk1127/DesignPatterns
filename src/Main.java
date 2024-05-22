@@ -1,9 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Car scorpioClassic = CarFactory.createCar("ScorpioClassic");
+        CarFactory classicFactory = new ScorpioClassFactory();
+        Car scorpioClassic = classicFactory.createCar();
         scorpioClassic.drive();
 
-        Car scorpioN = CarFactory.createCar("ScorpioN");
+        CarFactory nFactory = new ScorpioNFactory();
+        Car scorpioN = nFactory.createCar();
         scorpioN.drive();
     }
 }
