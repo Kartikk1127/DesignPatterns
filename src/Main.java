@@ -11,16 +11,7 @@ method to use synchronisation.*/
 
 public class Main {
     public static void main(String[] args) {
-        Runnable task = () -> {
-            SingletonExample singletonExample = SingletonExample.getInstance();
-
-            singletonExample.showMessage();
-        };
-
-        Thread thread1 = new Thread(task);
-        Thread thread2 = new Thread(task);
-
-        thread1.start();
-        thread2.start();
+        EarlySingleton singleton = EarlySingleton.getInstance();
+        singleton.showMessage();
     }
 }
