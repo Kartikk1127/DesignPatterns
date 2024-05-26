@@ -11,7 +11,7 @@ method to use synchronisation.*/
 
 public class Main {
     public static void main(String[] args) {
-        EarlySingleton singleton = EarlySingleton.getInstance();
+        LazySingleton singleton = LazySingleton.getInstance();
         singleton.showMessage();
     }
 }
