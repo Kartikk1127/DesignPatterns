@@ -6,10 +6,21 @@ This violates the principle of the Singleton pattern, which is supposed to
 ensure that only one instance of the class is created.
 */
 
+/*To make the Singleton pattern thread-safe, you can modify the getInstance()
+method to use synchronisation.*/
+
 public class Main {
     public static void main(String[] args) {
-        SingletonExample singletonExample = SingletonExample.getInstance();
+        Runnable task = () -> {
+            SingletonExample singletonExample = SingletonExample.getInstance();
 
-        singletonExample.showMessage();
+            singletonExample.showMessage();
+        };
+
+        Thread thread1 = new Thread(task);
+        Thread thread2 = new Thread(task);
+
+        thread1.start();
+        thread2.start();
     }
 }
