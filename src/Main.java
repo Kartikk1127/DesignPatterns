@@ -9,10 +9,10 @@ ensure that only one instance of the class is created.
 /*To make the Singleton pattern thread-safe, you can modify the getInstance()
 method to use synchronisation.*/
 
-// to make the lazy initialization thread safe you can use double checked locking or use the synchronized keyword in the getInstance() method, but these approaches have their own set of complexities and performance considerations
+// we can also achieve thread safety in lazy initialization using inner static class
 public class Main {
     public static void main(String[] args) {
-        LazySingleton singleton = LazySingleton.getInstance();
+        LazySingletonUsingStaticInnerClass singleton = LazySingletonUsingStaticInnerClass.getInstance();
         singleton.showMessage();
     }
 }
