@@ -12,7 +12,7 @@ method to use synchronisation.*/
 // we can also achieve thread safety in lazy initialization using inner static class
 public class Main {
     public static void main(String[] args) {
-        LazySingletonUsingStaticInnerClass singleton = LazySingletonUsingStaticInnerClass.getInstance();
+        DoubleLockingSingleton singleton = DoubleLockingSingleton.getInstance();
         singleton.showMessage();
     }
 }
