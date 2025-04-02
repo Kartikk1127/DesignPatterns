@@ -1,4 +1,4 @@
-package org.kartikey;
+package org.kartikey.strategyDesignPattern.followed;
 
 public class Main {
     public static void main(String[] args) {

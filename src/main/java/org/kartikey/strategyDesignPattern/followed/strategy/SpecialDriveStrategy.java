@@ -1,4 +1,4 @@
-package org.kartikey.strategy;
+package org.kartikey.strategyDesignPattern.followed.strategy;
 
 public class SpecialDriveStrategy implements DriveStrategy{
     @Override

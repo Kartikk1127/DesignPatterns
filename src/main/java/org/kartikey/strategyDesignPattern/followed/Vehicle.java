@@ -1,6 +1,6 @@
-package org.kartikey;
+package org.kartikey.strategyDesignPattern.followed;
 
-import org.kartikey.strategy.DriveStrategy;
+import org.kartikey.strategyDesignPattern.followed.strategy.DriveStrategy;
 
 public class Vehicle {
     DriveStrategy driveStrategy;
