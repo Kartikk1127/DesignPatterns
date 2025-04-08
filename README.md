@@ -1,13 +1,5 @@
-# Decorator Design Pattern
-Decorating objects to build new objects and so on in the principle of decorator design pattern.
-Think of a pizza where you can keep on adding extra toppings to build your favorite one like extra cheese, extra veggies and so on.
-A base car where you can add on seat covers, modifications and what not.
-All this relates to decorator design pattern in programming.
-It follows both is-a and has-a relationship
-
-# Why do we need decorator design pattern?
-This is done to avoid class explosion.
-
-# Any example?
-Design a coffee machine
-Design a pizza cost calculator
+# Factory Design Pattern
+It's a creational design pattern, i.e. jab bhi we want to create objects based on some condition
+we go on to use factory design pattern
+In a big codebase, if you want to create an object it becomes difficult hence factory design pattern says to create an object
+ask the factory to create it rather than doing it yourself.
